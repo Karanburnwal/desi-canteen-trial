@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesiCanteen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="head_center">
+        <h5><i class="fas fa-ellipsis-h" style="color:white"></i> DesiCanteen</h5>
+        <div class="subscribe_content">
+            About Us
+        </div>
+    </header>
+    <section class='location'>
+        <form action="/" method="POST">
+            <input type="text" name='city' placeholder="enter city" class="location-input"> <br>
+            <button type="submit" class="location-btn">Submit</button>
+        </form>
+    </section>
+    <section class="all_content">
+        <div class="section-center">
+            <% menu.map((item)=>{ %>
+                <article class="news">
+                    <div class='img'>
+                        <img src=<%= item.img%> alt="menu item" class="photo" />
+                    </div>
+                    <div class="news-info">
+                        <header>
+                            <h4><%= item.title%></h4>
+                        </header>
+                        <p class="item-text">
+                            <%= item.desc.substring(0,100)%>...
+                        </p>
+                        <div class='icons'>
+                            <i class="far fa-user"> <%= item.name%> </i>
+                            <i class="far fa-clock"> <%= item.date%> </i>
+                        </div>
+                        <a href="#" style="color:white">Learn More</a>
+                    </div>
+                </article>
+            <% }) %>
+        </div>
+    </section>
+</body>
+</html>

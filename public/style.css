@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(66, 66, 126);
+  padding-bottom: 40px;
+  /* font-family: serif, sans-serif; */
+}
+input,
+button {
+  outline: transparent;
+  border: none;
+}
+/* for making the header */
+
+.head_center {
+  background-color: rgb(110, 110, 161);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.head_center h5 {
+  color: rgb(210, 212, 226);
+  font-size: 1.5rem;
+  margin: 25px;
+  padding-top: 8px;
+}
+.subscribe_content {
+  margin: 25px;
+  font-size: 1.5rem;
+  color: rgb(210, 212, 226);
+}
+.subscribe_content button {
+  padding: 8px 6px 8px 10px;
+  background-color: rgb(117, 117, 238);
+  color: white;
+  cursor: pointer;
+}
+/* For making templete box */
+.photo {
+  width: 170px;
+  height: 170px;
+  /* object-fit: cover; */
+}
+
+.news {
+  padding: 2px;
+  background-color: rgb(88, 88, 128);
+  width: 170px;
+  /* border: 2px solid rgb(38, 38, 88); */
+}
+
+.section-center {
+  position: relative;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 5%);
+  /* margin: 100px; */
+  /* making dynamic box */
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 0.3rem 0.3rem;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /* align-items: center; */
+}
+
+.news-info {
+  margin: 4px;
+  background-color: rgb(88, 88, 128);
+  color: white;
+
+  /* height: 150px;
+  overflow: hidden; */
+}
+.news-info p {
+  padding: 6px;
+  font-size: 0.7rem;
+  color: rgb(177, 177, 214);
+  font-family: "Times New Roman", Times, serif;
+}
+.news-info h4 {
+  font-size: 1rem;
+  padding: 3px;
+}
+.news-info header p {
+  font-size: 12px;
+  color: rgb(146, 146, 173);
+}
+.news-info header i {
+  font-size: 0.4rem;
+  margin-bottom: 5px;
+}
+.bottom_photo {
+  display: flex;
+}
+.news-info .item-text {
+  height: 70px;
+  overflow: hidden;
+}
+.icons {
+  font-size: 10px;
+  padding-top: 10px;
+}
+.icons i {
+  padding-left: 9px;
+}
+
+/* for making wide page for today */
+
+.photo_wide {
+  width: 348px;
+  height: 170px;
+  /* object-fit: cover; */
+}
+
+.news_wide {
+  padding: 2px;
+  background-color: rgb(88, 88, 128);
+  width: 348px;
+  /* border: 2px solid rgb(38, 38, 88); */
+}
+
+.all_content {
+  margin-bottom: 100px;
+}
+.location {
+  text-align: center;
+}
+.location-input {
+  margin: 10px;
+  width: 50%;
+  padding: 5px;
+  font-size: 1.3rem;
+}
+.location-btn {
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 5px;
+  width: 10rem;
+}
+@media only screen and (max-width: 600px) {
+  .subscribe_content input {
+    font-size: 0.55rem;
+    padding: 9px;
+    padding-top: 11px;
+  }
+}
