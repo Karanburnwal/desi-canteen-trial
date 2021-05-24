@@ -1,7 +1,6 @@
 {
   "name": "desicanteen",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -19,8 +18,12 @@
   },
   "author": "",
   "license": "ISC",
+  "engines":{
+    "node":"14.15.4"
+  },
   "bugs": {
     "url": "https://github.com/Karanburnwal/desi-canteen-trial/issues"
   },
-  "homepage": "https://github.com/Karanburnwal/desi-canteen-trial#readme"
+  "homepage": "https://github.com/Karanburnwal/desi-canteen-trial#readme",
+  "description": ""
 }
